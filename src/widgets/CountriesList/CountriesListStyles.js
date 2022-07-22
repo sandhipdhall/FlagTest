@@ -13,11 +13,31 @@ const CountriesListStyles = theme => ({
     marginBottom: 20,
     marginHorizontal: 16,
   },
-  titleStyle: {
-    ...theme.fontSize.fontSize24,
+  filterByRegionView: {
+    backgroundColor: theme.whiteBG,
+    marginHorizontal: 16,
+    marginBottom:20,
+    borderRadius: 4,
+    width:'45%',
+    shadowColor: theme.shadowColor,
+    shadowOffset: { width: 3, height: 3 },
+    shadowOpacity: 0.5,
+    elevation: 5,
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center'
+  },
+  filterByRegionText: {
+    ...theme.fontSize.fontSize18,
     lineHeight: 30,
     color: theme.textColor.commonText,
     marginHorizontal: 16,
+    textAlign:'center'
+  },
+  arrowIcon:{
+    height:12,
+    width:12,
+    marginRight:5
   },
   blueContainer: {
     borderWidth: 1,
@@ -50,6 +70,20 @@ const CountriesListStyles = theme => ({
   searchContainer: {
     marginHorizontal: 15,
     marginBottom: 18,
+  },
+  modalHeading:{
+    ...theme.fontSize.fontSize22,
+    color: theme.textColor.commonText,
+    fontWeight:'600',
+    textAlign: 'center',
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  modalRegionsText: {
+    ...theme.fontSize.fontSize20,
+    lineHeight: 36,
+    color: theme.textColor.commonText,
+    textAlign: 'center',
   },
 });
 

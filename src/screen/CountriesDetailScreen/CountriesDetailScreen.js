@@ -8,6 +8,7 @@ import { DUMMY_IMAGE } from '../../assets/const';
 import { CountriesDetailScreenStyles } from './CountriesDetailScreenStyles';
 import { useTheme } from '../../theme/theme';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import DashboardHeader from '../../components/DashboardHeader/DashboardHeader';
 
 export default CountriesDetailScreen = props => {
   const theme = useTheme();
@@ -18,6 +19,14 @@ export default CountriesDetailScreen = props => {
 
   return (
     <SafeAreaView style={styles.mainItemView}>
+       <DashboardHeader
+          theme={theme}
+          leftButtonOnClick={() => navigation.pop()}
+          rightButtonEnable={true}
+          headerTitle={getLocalizedText('Countries.headerTitle')}
+          customHeaderContainer={styles.customHeaderContainer}
+          customHeaderTitleStyle={styles.customHeaderTitleStyle}
+        />
       <TouchableOpacity
         style={styles.backView}
         onPress={() => { navigation.goBack() }}>

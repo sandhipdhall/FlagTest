@@ -1,7 +1,9 @@
 const en = {
 
   Countries: {
-    headerTitle: 'Countries List',
+    headerTitle: 'Where in the world?',
+    selectRegion:'Select Region',
+    filterByRegion:'Filter By Region',
     back:'Back',
     capital: 'Capital',
     population: 'Population',
